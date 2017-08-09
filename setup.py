@@ -2,11 +2,11 @@ import os
 from setuptools import setup
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+    return open(os.path.join(os.path.dirname(__file__), fname), encoding='utf-8').read()
 
 setup(
     name = "jws",
-    version = "0.1.2",
+    version = "0.1.3",
     author = "Brian J Brennan",
     author_email = "brian@nyhacker.org",
     description = ("JSON Web Signatures implementation in Python"),
